@@ -1,7 +1,7 @@
 {
-	"name": "hugo-installer",
+	"name": "@tylerbu/hugo-installer",
 	"description": "Installs hugo into your repository.",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"author": {
 		"name": "Dominique Müller",
 		"email": "dominique.m.mueller@gmail.com",
