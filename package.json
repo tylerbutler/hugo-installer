@@ -23,12 +23,12 @@
 	],
 	"main": "index.js",
 	"bin": {
-		"hugo-installer": "bin/hugo-installer.js"
+		"hugo-installer": "dist/bin/hugo-installer.js"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.json",
+		"build": "tsc -p tsconfig.json && copyfiles package.json CHANGELOG.md LICENSE README.md dist",
 		"clean": "rimraf -r dist/**",
-		"release": "automatic-release && copyfiles package.json CHANGELOG.md LICENSE README.md dist"
+		"release": "automatic-release"
 	},
 	"dependencies": {
 		"bin-wrapper": "^4.1",
